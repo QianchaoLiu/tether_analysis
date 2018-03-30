@@ -49,6 +49,3 @@ class USDT_Parser(object):
             yield tx_details
                 
         
-parser = USDT_Parser(OMNI_URL, OMNI_RPC_USERNAME, OMNI_RPC_PW)
-for txs in parser.get_block(438072):
-    print(txs)
