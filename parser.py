@@ -33,9 +33,9 @@ class USDT_Parser(object):
         return txs
     
     def get_block(self, start=0, end=None):
-        assert end >= start
         if not end:
             end = self.__rpcRequest('omni_getinfo', [])['block']
+        assert end >= start
         for block in range(start, end+1):
             txids = self.__getTxsByBlock(block)
             tx_details = []
