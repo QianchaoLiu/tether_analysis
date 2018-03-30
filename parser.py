@@ -3,9 +3,6 @@ from requests.auth import HTTPBasicAuth
 import json
 
 USDT_PROPERTYID = 31
-OMNI_URL = 'http://localhost:8332'
-OMNI_RPC_USERNAME = 'xxx'
-OMNI_RPC_PW = 'xxx'
 
 class USDT_Parser(object):
     def __init__(self, url, username, password):
